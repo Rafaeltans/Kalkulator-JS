@@ -5,9 +5,9 @@ function appendValue(value) {
   display.value += value;
 }
 
-function persen(){
-  let current = eval(display.value);
-  display.value = current/100
+function persen() {
+  let current = math.evaluate(display.value);
+  display.value = current / 100
 }
 
 function clearDisplay() {
@@ -19,10 +19,10 @@ function deleteLast() {
 }
 
 function calculate() {
-//   try {
-//     display.value = eval(display.value);
-//   } catch (error) {
-//     alert('Input tidak valid!');
-//   }
-    display.value=eval(display.value)
+  //   try {
+  //     display.value = eval(display.value);
+  //   } catch (error) {
+  //     alert('Input tidak valid!');
+  //   }
+  display.value = math.evaluate(display.value)
 }
